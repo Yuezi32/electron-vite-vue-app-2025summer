@@ -1,0 +1,63 @@
+appId: com.rabbit.imagecompressor.app
+productName: 图片压缩小工具
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+  - '!scripts/*'
+asarUnpack:
+  - resources/**
+win:
+  # exe文件名
+  executableName: electron-vite-vue-app
+  icon: resources/icon.png
+nsis:
+  # 安装程序文件名
+  artifactName: ${name}-${version}-setup.${ext}
+  # 桌面快捷方式名称
+  shortcutName: ${productName}
+  # Windows “程序和功能” 卸载列表里显示的名字
+  uninstallDisplayName: ${productName}
+  # 是否在桌面创建快捷方式，always=始终创建，never=不创建，prompt=询问用户
+  createDesktopShortcut: always
+  # 是否允许用户自定义安装路径
+  allowToChangeInstallationDirectory: true
+  # “一键安装”还是“向导模式”
+  oneClick: false
+mac:
+  entitlementsInherit: build/entitlements.mac.plist
+  extendInfo:
+    - NSCameraUsageDescription: Application requests access to the device's camera.
+    - NSMicrophoneUsageDescription: Application requests access to the device's microphone.
+    - NSDocumentsFolderUsageDescription: Application requests access to the user's Documents folder.
+    - NSDownloadsFolderUsageDescription: Application requests access to the user's Downloads folder.
+  notarize: false
+  icon: resources/icon.png
+  identity: null
+dmg:
+  artifactName: ${name}-${version}.${ext}
+linux:
+  target:
+    - AppImage
+    - snap
+    - deb
+  maintainer: electronjs.org
+  category: Utility
+  icon: resources/icon.png
+appImage:
+  artifactName: ${name}-${version}.${ext}
+npmRebuild: false
+publish:
+  provider: generic
+  # 更新服务器地址，platform会根据系统类型自动设置不同的地址
+  # src/main/checkForUpdate.js中autoUpdater.setFeedURL方法优先级高于本文件配置
+  # win32 = Windows（32位 或者 64位）
+  # darwin = Mac（Intel 或者 Apple Silicon）
+  # linux = 各类 Linux 发行版
+  url: http://localhost/electron-demo/${platform}/
+electronDownload:
+  mirror: https://npmmirror.com/mirrors/electron/

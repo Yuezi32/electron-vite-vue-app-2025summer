@@ -1,0 +1,14 @@
+# JavaScript中的代码使用单引号(')代替双引号(")
+singleQuote: true
+# 每行代码末尾不加分号
+semi: false
+# 每行代码最大长度100个字符，超出时 Prettier 会自动换行
+printWidth: 100
+# 对象、数组、函数参数列表等结构中，最后一项不加逗号。
+trailingComma: none
+# 缩进时使用 4 个空格
+tabWidth: 4
+# 使用空格进行缩进，而不是 Tab 字符。确保不同编辑器显示一致。
+useTabs: false
+# 自动检测操作系统使用的换行符（Linux 是 \n，Windows 是 \r\n）。适用于跨平台开发，避免换行符冲突。
+endOfLine: auto

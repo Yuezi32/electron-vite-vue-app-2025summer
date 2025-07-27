@@ -1,0 +1,6 @@
+# 本文件的更新配置仅适用于dev模式
+# src/main/checkForUpdate.js中autoUpdater.setFeedURL方法优先级高于本文件配置
+provider: generic
+# 更新服务器地址，这里无法根据系统类型灵活设置不同的地址（因为本配置文件仅用于dev模式）
+url: http://localhost/electron-demo/win/
+updaterCacheDirName: electron-vite-vue-app-updater
