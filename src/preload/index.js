@@ -42,8 +42,8 @@ const api = {
     },
     /**
      * 下载安装包
-     * Windows会下载到：C:\Users\用户名\AppData\Local\electron-vite-react-app-updater
-     * macOS会下载到：/Users/用户名/Library/Caches/electron-vite-react-app-updater
+     * Windows会下载到：C:\Users\用户名\AppData\Local\electron-vite-vue-app-updater
+     * macOS会下载到：/Users/用户名/Library/Caches/electron-vite-vue-app-updater
      **/
     appDownloadUpdate: (callback) => {
         // 这里要使用 `on` 而不是 `once`，因为下载过程中可能会多次发送进度更新
