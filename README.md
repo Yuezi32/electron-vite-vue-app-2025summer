@@ -31,7 +31,7 @@
 
 [《2025盛夏版：基于electron37+vite7的Vue桌面客户端保姆教程（上篇）》](https://mp.weixin.qq.com/s/gJhrGOG0DaBHEgTf52Z-cw)
 
-[《2025盛夏版：基于electron37+vite7的Vue桌面客户端保姆教程（下篇）》](https://mp.weixin.qq.com/s/JZrIvObfpV3CMhlwuJOwmg)
+[《2025盛夏版：基于electron37+vite7的Vue桌面客户端保姆教程（下篇）》](https://mp.weixin.qq.com/s/fGKozdPCgpAELg9f7CkNSA)
 
 
 ## 章节目录
@@ -148,4 +148,4 @@ npm run build:linux
 
 [《2025盛夏版：基于electron37+vite7的Vue桌面客户端保姆教程（上篇）》](https://mp.weixin.qq.com/s/gJhrGOG0DaBHEgTf52Z-cw)
 
-[《2025盛夏版：基于electron37+vite7的Vue桌面客户端保姆教程（下篇）》](https://mp.weixin.qq.com/s/JZrIvObfpV3CMhlwuJOwmg)
+[《2025盛夏版：基于electron37+vite7的Vue桌面客户端保姆教程（下篇）》](https://mp.weixin.qq.com/s/fGKozdPCgpAELg9f7CkNSA)
